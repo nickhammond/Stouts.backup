@@ -126,7 +126,7 @@ Example:
     # Backup postgresql database
     - name: postgresql
         schedule: 0 4 * * 0                       # At 4am every day
-        source: postgresql://project              # Backup prefixes: postgresql://, maysql://, mongo://
+        source: postgresql://project              # Backup prefixes: postgresql://, mysql://, mongo://
         target: s3://s3-eu-west-1.amazonaws.com/backup.backet/{{inventory_hostname}}/postgresql
         user: postgres
 
